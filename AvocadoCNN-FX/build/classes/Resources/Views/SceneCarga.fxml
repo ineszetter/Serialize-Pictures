@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="324.0" prefWidth="564.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="Controllers.SceneCargaController">
+   <children>
+      <TitledPane animated="false" collapsible="false" layoutX="14.0" layoutY="26.0" prefHeight="261.0" prefWidth="263.0" text="Carga de Imágenes">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <TextField fx:id="txtTituloImagen" layoutX="14.0" layoutY="43.0" prefHeight="25.0" prefWidth="233.0" />
+                  <Label layoutX="14.0" layoutY="26.0" text="Título:" />
+                  <Button fx:id="bttnGuardarImagen" layoutX="160.0" layoutY="189.0" mnemonicParsing="false" onAction="#bttnGuardarImagenActionPerformed" prefHeight="25.0" prefWidth="87.0" text="Guardar" />
+                  <Button fx:id="bttnBuscarImagen" layoutX="13.0" layoutY="111.0" mnemonicParsing="false" onAction="#bttnBuscarImagenActionPerformed" prefHeight="25.0" prefWidth="92.0" text="Buscar" />
+                  <Label layoutX="14.0" layoutY="86.0" text="Imagen:" />
+               </children>
+            </AnchorPane>
+        </content>
+      </TitledPane>
+      <ImageView fx:id="imgVistaPrevia" fitHeight="236.0" fitWidth="249.0" layoutX="298.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/avocado.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="385.0" layoutY="26.0" text="Vista previa" />
+   </children>
+</AnchorPane>
